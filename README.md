@@ -1,5 +1,3 @@
-# 🚧 WORK IN PROGRESS. See [#1](https://github.com/MunifTanjim/octoherd-script-set-pr-merge-config/pull/1)
-
 # octoherd-script-set-pr-merge-config
 
 > An octoherd script to set pull request merge config
