@@ -15,11 +15,11 @@ npx octoherd-script-set-pr-merge-config \
 
 ## Options
 
-| option           | type    | description                         |
-| ---------------- | ------- | ----------------------------------- |
-| `--squash-merge` | boolean | Use `--no-squash-merge` for `false` |
-| `--merge-commit` | boolean | Use `--no-merge-commit` for `false` |
-| `--rebase-merge` | boolean | Use `--no-rebase-merge` for `false` |
+| option                                  | type    | description         |
+| --------------------------------------- | ------- | ------------------- |
+| `--merge-commit` or `--no-merge-commit` | boolean | toogle merge commit |
+| `--rebase-merge` or `--no-rebase-merge` | boolean | toogle rebase merge |
+| `--squash-merge` or `--no-squash-merge` | boolean | toogle squash merge |
 
 ## Contributing
 
