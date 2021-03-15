@@ -6,14 +6,14 @@
  * @param {import('@octoherd/cli').Octokit} octokit
  * @param {import('@octoherd/cli').Repository} repository
  * @param {object} options
- * @param {boolean} [options.mergeCommit]
- * @param {boolean} [options.rebaseMerge]
- * @param {boolean} [options.squashMerge]
+ * @param {boolean} [options.mergeCommit] toogle merge commit
+ * @param {boolean} [options.rebaseMerge] toogle rebase merge
+ * @param {boolean} [options.squashMerge] toogle squash merge
  */
 export async function script(
   octokit,
   repository,
-  { squashMerge, mergeCommit, rebaseMerge }
+  { mergeCommit, rebaseMerge, squashMerge }
 ) {
   const body = {
     allow_merge_commit: mergeCommit,
@@ -31,6 +31,8 @@ export async function script(
     octokit.log.info('Nothing to update!')
     return
   }
+
+  octokit.log.info(body, 'Updating Config')
 
   const id = repository.id
   const owner = repository.owner.login
